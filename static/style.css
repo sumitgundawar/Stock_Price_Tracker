@@ -1,0 +1,128 @@
+/* Very dark background for the entire webpage */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a; /* Very dark background color */
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Styles for the search box container */
+.add-ticker-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Styles for the search box */
+.search-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px; /* Add margin to the right */
+}
+
+/* Styles for the "Add" button */
+.add-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the suggestions container */
+.search-container {
+    position: relative;
+    z-index: 2; /* Set a higher z-index to bring it to the foreground */
+}
+
+/* Styles for the suggestions */
+.suggestions {
+    position: absolute;
+    width: 270px; /* Set width to match the search box */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 5px;
+    z-index: 3; /* Set a higher z-index than other elements */
+}
+
+/* Change font color to black */
+.suggestions p {
+    color: #000;
+}
+
+/* New styles for the stock box container */
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center stock boxes horizontally */
+    align-items: flex-start; /* Align stock boxes to the top */
+}
+
+/* New styles for each stock box */
+.stock-box {
+    position: relative; /* Add relative positioning */
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    background-color: #2b2b2b; /* Darker container background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styles for the remove button */
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Color classes remain unchanged */
+
+.red-flash {
+    transition: background-color 1s;
+    background-color: #FFCCCC !important;
+}
+
+.green-flash {
+    transition: background-color 1s;
+    background-color: #CCFFCC !important;
+}
+
+.gray-flash {
+    transition: background-color 1s;
+    background-color: #CCC !important;
+}
