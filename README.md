@@ -1,6 +1,8 @@
 # Stock Price Tracker
 This simple web application built with Flask and JavaScript allows users to track the current price and percentage change of stocks, index funds, ETFs, and cryptocurrencies using the Yahoo Finance API. The application updates the price every 10 seconds and displays the information in real time on the web page.
 
+![SPT Screenshot](https://github.com/sumitgundawar/Stock_Price_Tracker/assets/65755826/dee09788-2a81-4e6e-8b79-49c8c0f7798b)
+
 ## Getting Started
 Follow these instructions to set up and run the stock price tracker on your local machine.
 
